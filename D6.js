@@ -31,11 +31,10 @@ let moltiplicatore = 3;
 
 function crazySum(x, y) {
   if (x === y) return (x + y) * 3;
-  else x !== y;
-  return x + y;
+  else return x + y;
 }
 
-let risultato2 = crazySum(6, 10);
+let risultato2 = crazySum(6, 6);
 
 console.log("Esercizio 2:", risultato2);
 
@@ -152,10 +151,9 @@ cutString("epicode");
 
 function giveMeRandom(n) {
   let arrayNumeri = [];
-  n = Math.round(Math.random() <= 10);
+  n = Math.floor(Math.random() <= 10);
   if (typeof n === "number") {
     return arrayNumeri.push();
-    console.log("Esercizio 10:", arrayNumeri);
   }
 }
 
