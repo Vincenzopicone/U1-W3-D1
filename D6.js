@@ -85,19 +85,17 @@ console.log("Esercizio 4:", risultato4);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-function epify(stringa) {
-  if (typeof stringa === "string") {
-    epicode = "EPICODE";
-    if (stringa.substring(0, 7) === "EPICODE") {
-      console.log("Esercizio 5:", stringa);
-    }
+/*
+function epify(str) {
+  if (str.starstWith("EPICODE")) {
+    return str;
   } else {
-    console.log("Esercizio 5:", epicode.concat(stringa));
+    return "EPICODE" + str;
   }
 }
 
-epify("bianconero");
+let frase = epify("ciao come stai");
+console.log("Esercizio 6:", frase);*/
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
@@ -105,6 +103,26 @@ epify("bianconero");
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function check3and7(n) {
+  if (typeof n !== "number" || n < 0) {
+    risultato = "Non è un numero";
+  } else {
+    switch (0) {
+      case n % 3:
+        risultato = "Numero multiplo di 3";
+        break;
+      case n % 7:
+        risultato = "Numero multiplo di 7";
+        break;
+      default:
+        risultato = "Non è multiplo di 3 o 7";
+    }
+  }
+  return risultato;
+}
+
+console.log("Esercizio 7:", check3and7(14));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
